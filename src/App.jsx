@@ -8,6 +8,7 @@ import Sidebar from './components/Sidebar'
 import Navbar from './components/Navbar'
 import PageTransition from './components/PageTransition'
 import { Analytics } from '@vercel/analytics/react';
+import ScrollToTop from './components/ScrollToTop'
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         </div>
 
         <div className='components'>
+          <ScrollToTop />
           <AnimatePresence mode="wait">
             <Routes location={location} key={location.pathname}>
               <Route path="/home" element={<PageTransition><HomePage /></PageTransition>} />

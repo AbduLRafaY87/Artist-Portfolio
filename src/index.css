@@ -1384,8 +1384,13 @@ body {
     height: auto;
   }
 
+  .navbar{
+    border-bottom: 1px solid var(--border-color);
+    padding: 15px 10px;
+  }
+
   .body-layout {
-    padding: 0.5rem 0.5rem 0px 0.5rem;
+    padding: 0.5rem 0.3rem .5rem 0.3rem;
   }
 
   .pagesContainer {
@@ -1430,6 +1435,23 @@ body {
   }
   .popup{
     width: 100% !important;
+  }
+  .carousel-slide{
+    height: auto;
+  }
+  .carousel{
+    height: auto;
+    /* margin: 0px; */
+  }
+  .carousel-slide{
+
+  }
+  header{
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 10px;
+
+    /* position: relative; */
   }
 }
 

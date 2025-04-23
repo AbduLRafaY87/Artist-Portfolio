@@ -28,15 +28,15 @@ const Navbar = () => {
         <header>
             <nav className="navbar">
                 <div className="logo">
-                    <p>Adeena Sajjad</p>
+                    <p to='/home'>Adeena Sajjad</p>
                 </div>
 
                 <div className={`nav-links ${isOpen ? 'active' : ''}`}>
                     <ul>
-                        <li><NavLink to="/home" className={({ isActive }) => isActive ? 'linkActive' : ''} onClick={closeMenu}>Home</NavLink></li>
-                        <li><NavLink to="/portfolio" className={({ isActive }) => isActive ? 'linkActive' : ''} onClick={closeMenu}>Gallery</NavLink></li>
-                        <li><NavLink to="/about-me" className={({ isActive }) => isActive ? 'linkActive' : ''} onClick={closeMenu}>The Artist</NavLink></li>
-                        <li><NavLink to="/contact-me" className={({ isActive }) => isActive ? 'linkActive' : ''} onClick={closeMenu}>Connect</NavLink></li>
+                        <li><NavLink to="/home#" className={({ isActive }) => isActive ? 'linkActive' : ''} onClick={closeMenu}>Home</NavLink></li>
+                        <li><NavLink to="/portfolio#" className={({ isActive }) => isActive ? 'linkActive' : ''} onClick={closeMenu}>Gallery</NavLink></li>
+                        <li><NavLink to="/about-me#" className={({ isActive }) => isActive ? 'linkActive' : ''} onClick={closeMenu}>The Artist</NavLink></li>
+                        <li><NavLink to="/contact-me#" className={({ isActive }) => isActive ? 'linkActive' : ''} onClick={closeMenu}>Connect</NavLink></li>
                     </ul>
                 </div>
 
