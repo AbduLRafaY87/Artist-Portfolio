@@ -514,6 +514,7 @@ header {
   overflow: hidden;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
   position: relative;
+  transition: all .33s ease;
 }
 
 .art-card:hover {
@@ -524,12 +525,43 @@ header {
 .art-card {
   transition: transform 0.5s cubic-bezier(0.6, 0.01, -0.05, 0.95),
     box-shadow 0.5s ease;
+    /* position: sticky; */
+    /* top: 0px; */
 }
 
 .art-card:hover {
   transform: translateY(-5px);
   /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08); */
 }
+
+.art-card h3{
+  position: relative;
+  z-index: 5;
+  margin-top: -30px;
+  margin-left: -20px;
+  padding-top: 10px;
+  padding: 10px 10px 0px 30px;
+  border-radius: 10px;
+  transition: all .33s ease;
+
+  width: fit-content;
+  background-color: var(--bg-color);
+  /* border: 1px solid var(--border-color); */
+}
+
+/* .art-card h3::before{
+  display: block;
+  content: "";
+  position: absolute;
+  height: 50px;
+  width: 90%;
+  border-top: 1px solid var(--border-color);
+  z-index: -5;
+  top: -10px;
+  border-radius: 10px;
+  left: -20px;
+
+} */
 
 .art-thumb {
   width: 100%;
@@ -582,7 +614,14 @@ header {
 }
 
 .art-card:hover h3 {
+  background-color: transparent;
   color: var(--accent-primary);
+  text-shadow: 0 0 12px rgba(212, 175, 55, 0.3);
+  /* display: none; */
+  margin: 0px;
+  padding: 0px;
+  font-size: 1.1rem;
+  margin-top: 5px;
 }
 
 /* ==============================================

@@ -14,7 +14,7 @@ const Sidebar = () => {
       </div>
       <div className="bio">
         <p>Bio</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis blanditiis veniam fuga obcaecati adipisci distinctio illo sed voluptates quibusdam? Veniam?</p>
+        <p>I’m a sketch artist specializing in detailed, realistic portraits and conceptual illustrations.I work primarily with charcoal and graphite, focusing on creating striking contrasts and textures that evoke a sense of depth and movement.I’m inspired by the human form and the subtle nuances of emotion that it can convey, especially through facial expressions.I’m a self-taught artist with a deep love for experimenting with new techniques, always striving to push my own boundaries. <br />Check out my portfolio and follow me on Instagram to see new sketches as I create them! </p>
       </div>
       <div className="happy-clients">
         <p>My Happy Clients: 30 +</p>
