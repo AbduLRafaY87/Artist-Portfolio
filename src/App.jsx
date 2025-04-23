@@ -7,6 +7,8 @@ import ContactPage from './components/ContactPage'
 import Sidebar from './components/Sidebar'
 import Navbar from './components/Navbar'
 import PageTransition from './components/PageTransition'
+import { Analytics } from '@vercel/analytics/react';
+
 
 function App() {
   const location = useLocation();
@@ -34,6 +36,7 @@ function App() {
           </AnimatePresence>
         </div>
       </div>
+      <Analytics />
     </div>
   )
 }
