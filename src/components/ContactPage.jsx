@@ -40,9 +40,9 @@ const ContactPage = () => {
       <div className="contact-grid">
         {/* Left: Contact Info */}
         <div className="contact-info">
-          <p><strong>Email:</strong> <a href="mailto:your@email.com">adeena.chatriwala@gmail.com</a></p>
+          <p><strong>Email:</strong> <a href="adeena.chatriwala@gmail.com">adeena.chatriwala@gmail.com</a></p>
           {/* <p><strong>Phone:</strong> +92 312 3456789</p> */}
-          <p><strong>Instagram:</strong> <a href="https://instagram.com/yourhandle" target="_blank">/adeena.chatriwala</a></p>
+          <p><strong>Instagram:</strong> <a href="https://instagram.com/adeena.chatriwala" target="_blank">/adeena.chatriwala</a></p>
           <p><strong>Based in:</strong> Karachi, Pakistan</p>
           <p className="quote">"Art is not what you see, but what you make others see." – Edgar Degas</p>
         </div>

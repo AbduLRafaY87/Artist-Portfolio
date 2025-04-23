@@ -499,6 +499,7 @@ header {
   justify-content: space-between;
   gap: 1.5rem;
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 /* Portfolio Cards */
@@ -562,7 +563,7 @@ header {
   display: block;
 }
 
-.art-card::before {
+/* .art-card::before {
   content: '';
   position: absolute;
   top: 0;
@@ -574,7 +575,7 @@ header {
   transition: opacity 0.3s ease;
   z-index: 1;
   border-radius: 12px;
-}
+} */
 
 .art-card:hover::before {
   opacity: 1;
@@ -1145,20 +1146,30 @@ body {
     /* Show 2 per row */
   }
 
-  /* Popup adjustments */
   .popup {
+    position: static;
+  }
+
+  .overlay-bottom-btn {
+    transform: translateX(0px) !important;
+    position: static;
+    right: 0px;
+    display: block;
+  }
+
+  /* Popup adjustments */
+  /* .popup {
     width: 95%;
     max-width: 700px;
-    flex-direction: column;
+    
   }
 
   .popup-content {
-    flex-direction: column;
   }
 
   .popup-img {
     width: 100%;
-    max-height: 350px;
+    max-height:auto;
     border-right: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   }
@@ -1166,7 +1177,7 @@ body {
   .popup-details {
     width: 100%;
     padding: 1.5rem;
-  }
+  } */
 }
 
 /* Small Screens (Mobile Landscape) */
@@ -1176,7 +1187,7 @@ body {
     from {
       width: 0;
     }
-  
+
     to {
       width: 40%;
     }
@@ -1200,27 +1211,30 @@ body {
     line-height: 2rem;
   }
 
-  /* Mobile navigation menu */
-  .navbar .nav-links {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: -900px;
-    height: 100vh;
-    width: 70vw;
-    background-color: var(--card-bg);
-    padding: 2rem 0;
-    border: 1px solid var(--border-color);
-    z-index: 1001;
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s ease;
-  }
+  /* Mobile navigation menu with glassmorphism */
+.navbar .nav-links {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -900px;
+  height: 100vh;
+  width: 70vw;
+  background: #0c0f1aca; /* semi-transparent */
+  backdrop-filter: blur(20px); /* frosted glass effect */
+  -webkit-backdrop-filter: blur(20px); /* Safari support */
+  padding: 2rem 0;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* soft glass border */
+  z-index: 1001;
+  box-shadow: 2px 0 20px rgba(78, 78, 78, 0.363); /* deeper shadow for float */
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: all 0.3s ease;
+}
 
-  .navbar .nav-links.active {
-    left: 0px;
-    /* overflow-y: auto; */
-    border-top-right-radius: 10px;
-  }
+.navbar .nav-links.active {
+  left: 0px;
+}
+
 
   .navbar .nav-links ul {
     flex-direction: column;
@@ -1304,6 +1318,24 @@ body {
     max-width: 100%;
     height: auto;
   }
+
+  .popup-content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    overflow: auto;
+    scrollbar-width: none;
+  }
+  .popup-img{
+    width: 100%;
+  }
+  .popup-details{
+    width: 100%;
+  }
+  .popup{
+    height: 80vh;
+  }
+
 }
 
 /* Extra Small Screens (Mobile Portrait) */
@@ -1319,6 +1351,7 @@ body {
 
   .pagesContainer {
     padding-inline: 1rem !important;
+    /* padding-bottom: 3rem; */
   }
 
   /* Single column for portfolio items */
