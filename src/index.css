@@ -1386,6 +1386,12 @@ body {
     font-size: 0.9rem;
     bottom: 15px;
   }
+  .overlay{
+    padding: 0px;
+  }
+  .popup{
+    width: 100% !important;
+  }
 }
 
 /* Fix for mobile overlay/popup scrolling */
